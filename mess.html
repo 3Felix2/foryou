@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="mess.css">
+<title>Website Saya</title>
+</head>
+<body>
+
+<nav>
+  <h1 class="h1-nav">🤍CECILIA HERNAWAN🤍</h1>
+
+  <ul id="menu">
+    <li><a href="home.html" onclick="closeMenu()">SAYA</a></li>
+    <li><a href="lov.html" onclick="closeMenu()">GALERI SAYA</a></li>
+    <li><a href="mess.html" onclick="closeMenu()">PESAN</a></li>
+  </ul>
+
+  <div class="hamb" id="hamb" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+<section id="pesan">
+  <h2>Kirim Pesan</h2>
+
+  <form class="pesan-form" onsubmit="kirimPesan(event)">
+    <input type="text" placeholder="Nama" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="4" placeholder="Pesan" required></textarea>
+    <button>Kirim</button>
+  </form>
+</section>
+
+<div class="copyright">
+  © 2025 Felix. All Rights Reserved.
+</div>
+
+<script src="mess.js">
+
+</script>
+
+</body>
+</html>
